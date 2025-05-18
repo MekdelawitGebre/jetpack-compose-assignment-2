@@ -73,7 +73,7 @@ fun TodoItem(
                     style = MaterialTheme.typography.bodyLarge
                 )
                 Text(
-                    text = "User ID: ${todo.userId}",
+                    text = "Todo ID: ${todo.id}",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

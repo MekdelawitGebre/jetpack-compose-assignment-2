@@ -65,6 +65,11 @@ fun TodoDetailScreen(
                                 )
                                 Spacer(modifier = Modifier.height(8.dp))
                                 Text(
+                                    text = "Todo ID: ${todo.id}",
+                                    style = MaterialTheme.typography.bodyLarge
+                                )
+                                Spacer(modifier = Modifier.height(8.dp))
+                                Text(
                                     text = "User ID: ${todo.userId}",
                                     style = MaterialTheme.typography.bodyLarge
                                 )
