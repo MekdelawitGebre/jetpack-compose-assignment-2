@@ -1,4 +1,3 @@
-
 package com.example.todosapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -27,7 +26,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Initialize Room with coroutine support
+        // Initialize Room
         val db = Room.databaseBuilder(
             applicationContext,
             TodoDatabase::class.java,
@@ -35,7 +34,7 @@ class MainActivity : ComponentActivity() {
         ).fallbackToDestructiveMigration()
             .build()
 
-        // Initialize Retrofit with proper timeouts
+        // Initialize Retrofit
         val retrofit = Retrofit.Builder()
             .baseUrl("https://jsonplaceholder.typicode.com/")
             .addConverterFactory(GsonConverterFactory.create())
